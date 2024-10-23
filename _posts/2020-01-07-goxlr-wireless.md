@@ -6,18 +6,14 @@ categories: streaming
 tags: goxlr streaming twitch hardware
 ---
 
-Connect any wireless headset to a GoXLR or GoXLR mini. In this video, I show you how you can connect any pair of wireless bluetooth headphones to a GoXLR or GoXLR mini.They can be AirPods, Beats, Beats Wireless Pro, Bose, or any other wireless bluetooth headset.You can use this bluetooth adapter transmitter to stream while using the GoXLR or GoXLR mini.
+[![GoXLR WITH WIRELESS HEADSET - Connect ANY wireless bluetooth headphones](https://img.youtube.com/vi/dTd7f-jK_BE/0.jpg)](https://www.youtube.com/watch?v=dTd7f-jK_BE "GoXLR WITH WIRELESS HEADSET - Connect ANY wireless bluetooth headphones")
 
-I bought these products with my own money because I thought they were cool.Nothing in this video was sponsored.
+Connect any wireless headset to a GoXLR or GoXLR mini. In this video, I show you how you can connect any pair of wireless bluetooth headphones to a GoXLR or GoXLR mini.  They can be AirPods, Beats, Beats Wireless Pro, Bose, or any other wireless bluetooth headset.  You can use this bluetooth adapter transmitter to stream while using the GoXLR or GoXLR mini.
 
-{% include embed/youtube.html id='dTd7f-jK_BE' %}
+I bought these products with my own money because I thought they were cool.  Nothing in this video was sponsored.
 
-📺 [Watch Video](https://www.youtube.com/watch?v=dTd7f-jK_BE)
+[Watch Video](https://www.youtube.com/watch?v=dTd7f-jK_BE)
 
-## Links
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
-🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>
-
-⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
-
-🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
