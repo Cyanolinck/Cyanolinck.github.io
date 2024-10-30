@@ -100,3 +100,39 @@ serving your site
 ```bash
 bundle exec jekyll s
 ```
+
+cat ~/.ssh/id_rsa.pub.
+# mac setup 
+Install rbenv and ruby-build:
+
+zsh
+Copy code
+brew install rbenv
+Initialize rbenv: Add the following to your ~/.zshrc to initialize rbenv automatically:
+
+zsh
+Copy code
+eval "$(rbenv init -)"
+Reload your shell to apply these changes:
+
+zsh
+Copy code
+source ~/.zshrc
+Install a New Version of Ruby: Now, install a new version of Ruby (e.g., 3.1.2) through rbenv:
+
+zsh
+Copy code
+rbenv install 3.1.2
+rbenv global 3.1.2
+This will use your user directory, avoiding system-protected files.
+
+Reinstall Bundler and Jekyll: With the new Ruby version set up, reinstall Bundler and Jekyll without sudo:
+
+zsh
+Copy code
+gem install bundler jekyll
+Run bundle install in Your Project: Finally, in your project directory:
+
+zsh
+Copy code
+bundle install
