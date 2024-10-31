@@ -1,31 +1,37 @@
 ---
-title: Host a static website with Jekyll in Github pages
+title: Host a static website in Github pages
 date: 2024-10-23 12:00:00 -500
 categories: [projects]
 tags: [website, github] # TAG names should always be lowercase
 ---
 
-This will show how you can setup a website like this that is hosted in github pages.
+How to setup static website and host it in Gitub. This guide is hosted with this mehtod.
 
-> TEST TEST TEST `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+This guide is heavily plagiarized from [Techno Tim: Meet Jekyll - The Static Site Generator](https://technotim.live/posts/jekyll-docs-site/)  
+ I used this guide to learn mysel but as I ran into quite a few issues that was not mentioned in the guide, so I desided to create my own.
+
+<br />
+
+There's quite a few Statis Website engienes that can be used nowdays but for this guide we'll use Jekyll, another is [Hugo](https://gohugo.io/)
 
 There's a couple of things that will be needed
 
-* WLS
+* WLS (Only for windows)
 * Zsh
 * VSCode
 * domain
 * Ruby
+* Python
+* Java
 
-This guide is heavily plagiarized from [Techno Tim: Meet Jekyll - The Static Site Generator](https://technotim.live/posts/jekyll-docs-site/)  
- I used this guide to learn mysel but as I ran into quite a few issues that was not mentioned in the guide  
-so I desided to create my own.
+<br />
+
+## Widnows
 
 ## Setup Terminal
 
 Install window terminal from <https://learn.microsoft.com/en-us/windows/terminal/install>  
-Launch it
+Launch Terminal (screenshot of terminal here)
 
 ### install WSL (The Windows Subsystem for Linux)
 
@@ -85,12 +91,79 @@ cd <YOUR-REPO-NAME>
 bundle
 ```
 
+## Github
+
+Set an email address in Git. You can use your GitHub-provided noreply email address or any email address.
+
+
+Configure Git
+You’ll want to follow this guide for configuring git.Be sure to follow the LINUX version
+https://docs.github.com/en/github/using-git/getting-started-with-git-and-github
+
+Set usename that Git will use
+```bash
+git config --global user.name "Techno Tim"
+```
+Use the command again without your name to check that it's correct
+
+```bash
+git config --global user.name
+```
+Output should be your username
+
+<br />
+
+Next do the same with your email
+
+```bash
+git config --global user.email "your_email@example.com"
+```
+Again, use the same command without your email to check that git is configured to use your email
+
+```bash
+git config --global user.email
+```
+
+<br />
+<br />
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+<br />
+
+```
+eval $(ssh-agent -s)
+```
+
+```bash
+git config --global user.email "YOUR_EMAIL"
+```
+
+Confirm that you have set the email address correctly in Git:
+
+```bash
+git config --global user.email
+```
+
+The output should be your email
+
 After making changes to your site, commit and push then up to git
 
 ```bash
 git add .
 git commit -m "made some changes"
 git push
+```
+
+To open your code in VSCode use below command inside of the pulled github folder
+
+<br />
+<br />
+<br />
+
+```bash
+code .
 ```
 
 ## Jekyll Commands
@@ -102,7 +175,9 @@ bundle exec jekyll s
 ```
 
 cat ~/.ssh/id_rsa.pub.
-# mac setup 
+
+## mac setup
+
 Install rbenv and ruby-build:
 
 zsh
@@ -136,3 +211,6 @@ Run bundle install in Your Project: Finally, in your project directory:
 zsh
 Copy code
 bundle install
+
+> TEST TEST TEST `_tabs/about.md`{: .filepath } and it will show up on this page.
+{: .prompt-tip }
