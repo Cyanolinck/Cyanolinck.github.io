@@ -8,7 +8,7 @@ tags: [website, github] # TAG names should always be lowercase
 How to setup static website and host it in Gitub. This guide is hosted with this mehtod.
 
 This guide is heavily plagiarized from [Techno Tim: Meet Jekyll - The Static Site Generator](https://technotim.live/posts/jekyll-docs-site/)  
- I used this guide to learn mysel but as I ran into quite a few issues that was not mentioned in the guide, so I desided to create my own.
+ I used this guide to learn mysel but as I ran into quite a few issues that was not mentioned in the guide, I desided to create my own.
 
 <br />
 
@@ -26,14 +26,16 @@ There's a couple of things that will be needed
 
 <br />
 
-## Widnows
+## Setup on Widnows
 
-## Setup Terminal
+### Install Terminal
 
 Install window terminal from <https://learn.microsoft.com/en-us/windows/terminal/install>  
 Launch Terminal (screenshot of terminal here)
 
-### install WSL (The Windows Subsystem for Linux)
+<br />
+
+### install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) (The Windows Subsystem for Linux)
 
 Open a Powershell tab in terminal and run below command to install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 
@@ -41,18 +43,21 @@ Open a Powershell tab in terminal and run below command to install [WSL](https:/
 wsl --install
 ```
 
-### install ZSH (Oh My Zsh!)
+<br />
 
-open a new tab with ubuntu, you can also set it as default in terminal
+### install [ZSH](https://ohmyz.sh/#install) (Oh My Zsh!)
 
-[Oh My Zsh](https://ohmyz.sh/#install)
+Open a new tab with ubuntu in Terminal
+
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-## Install Dependencies
+<br />
 
+### Install Dependencies
+Update system and and install Ruby
 ```bash
 sudo apt update
 sudo apt install ruby-full build-essential zlib1g-dev git
@@ -74,6 +79,8 @@ gem install jekyll bundler
 
 ```
 
+<br />
+
 ## Creating a site based on Chirpy Starter
 
 Visit <https://github.com/cotes2020/jekyll-theme-chirpy#quick-start>
@@ -91,34 +98,39 @@ cd <YOUR-REPO-NAME>
 bundle
 ```
 
-## Github
+<br />
+
+## Configure Git
 
 Set an email address in Git. You can use your GitHub-provided noreply email address or any email address.
-
 
 Configure Git
 You’ll want to follow this guide for configuring git.Be sure to follow the LINUX version
 https://docs.github.com/en/github/using-git/getting-started-with-git-and-github
 
-Set usename that Git will use
+### Set usename i Git
 ```bash
-git config --global user.name "Techno Tim"
+git config --global user.name "Lincken"
 ```
 Use the command again without your name to check that it's correct
 
 ```bash
 git config --global user.name
 ```
-Output should be your username
+Output should be your username like it does below
 
+```bash
+git config --global user.name
+Lincken
+```
 <br />
 
-Next do the same with your email
+#### Set email in Git
 
 ```bash
 git config --global user.email "your_email@example.com"
 ```
-Again, use the same command without your email to check that git is configured to use your email
+Use the same command without your email to check that git is configured to use your email
 
 ```bash
 git config --global user.email
@@ -126,6 +138,10 @@ git config --global user.email
 
 <br />
 <br />
+
+### Create SSH key
+
+Now we can generate a ssh key that we can use to access Github
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -214,3 +230,11 @@ bundle install
 
 > TEST TEST TEST `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip }
+
+GoodToKnow  
+Write names of posts like this, YYYY-MM-DD-Name of post.  
+If the date is in the future, the post won't show up until then.
+To add local Images, place them in root assets folder, recomendation under a new folder called images. Not in the Site>Assets folder!
+That folder is just for when it has built the website, if placing anything directly there is will disaperare when it builds the website.
+
+Java and Python is nessesary.
