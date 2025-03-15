@@ -101,7 +101,7 @@ cdn:
 
 # the avatar on sidebar, support local or CORS resources
 #avatar: https://i.pinimg.com/originals/ff/67/1c/ff671cdfc428ec61fbfbcbad350870c0.gif
-avatar: https://scontent.fbma5-1.fna.fbcdn.net/v/t1.6435-9/121150084_1819003874906352_7679734975777435654_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=ptc7IXsq3F0Q7kNvgF9-TJ4&_nc_zt=23&_nc_ht=scontent.fbma5-1.fna&_nc_gid=AdXPr-pFdJLUFBIvkzGdUI3&oh=00_AYCFmNcqD9ZcKGMpfC9wiX7WuXW9UvebX2p6koPHjhgDzw&oe=67435150
+avatar: assets\Images\Lincken.jpg
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
 social_preview_image: # string, local or CORS resources

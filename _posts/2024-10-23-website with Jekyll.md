@@ -10,7 +10,8 @@ How to setup static website and host it in Gitub. This guide is hosted with this
 This guide is heavily plagiarized from [Techno Tim: Meet Jekyll - The Static Site Generator](https://technotim.live/posts/jekyll-docs-site/)  
  I used this guide to learn mysel but as I ran into quite a few issues that was not mentioned in the guide, I desided to create my own.
 
-<br />
+\
+&nbsp;
 
 There's quite a few Statis Website engienes that can be used nowdays but for this guide we'll use Jekyll, another is [Hugo](https://gohugo.io/)
 
@@ -24,7 +25,8 @@ There's a couple of things that will be needed
 * Python
 * Java
 
-<br />
+\
+&nbsp;
 
 ## Setup on Widnows
 
@@ -33,7 +35,8 @@ There's a couple of things that will be needed
 Install window terminal from <https://learn.microsoft.com/en-us/windows/terminal/install>  
 Launch Terminal (screenshot of terminal here)
 
-<br />
+\
+&nbsp;
 
 ### install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) (The Windows Subsystem for Linux)
 
@@ -43,25 +46,31 @@ Open a Powershell tab in terminal and run below command to install [WSL](https:/
 wsl --install
 ```
 
-<br />
+\
+&nbsp;
 
 ### install [ZSH](https://ohmyz.sh/#install) (Oh My Zsh!)
 
 Open a new tab with ubuntu in Terminal
 
-
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-<br />
+\
+&nbsp;
 
 ### Install Dependencies
+
 Update system and and install Ruby
+
 ```bash
 sudo apt update
 sudo apt install ruby-full build-essential zlib1g-dev git
 ```
+
+\
+&nbsp;
 
 To avoid installing RubyGems packages as the root user:
 
@@ -79,7 +88,8 @@ gem install jekyll bundler
 
 ```
 
-<br />
+\
+&nbsp;
 
 ## Creating a site based on Chirpy Starter
 
@@ -98,7 +108,8 @@ cd <YOUR-REPO-NAME>
 bundle
 ```
 
-<br />
+\
+&nbsp;
 
 ## Configure Git
 
@@ -106,38 +117,46 @@ Set an email address in Git. You can use your GitHub-provided noreply email addr
 
 Configure Git
 You’ll want to follow this guide for configuring git.Be sure to follow the LINUX version
-https://docs.github.com/en/github/using-git/getting-started-with-git-and-github
+<https://docs.github.com/en/github/using-git/getting-started-with-git-and-github>
 
 ### Set usename i Git
+
 ```bash
 git config --global user.name "Lincken"
 ```
+
 Use the command again without your name to check that it's correct
 
 ```bash
 git config --global user.name
 ```
+
 Output should be your username like it does below
 
 ```bash
 git config --global user.name
 Lincken
 ```
-<br />
+
+\
+&nbsp;
 
 #### Set email in Git
 
 ```bash
 git config --global user.email "your_email@example.com"
 ```
+
 Use the same command without your email to check that git is configured to use your email
 
 ```bash
 git config --global user.email
 ```
 
-<br />
-<br />
+\
+&nbsp;
+\
+&nbsp;
 
 ### Create SSH key
 
@@ -146,9 +165,11 @@ Now we can generate a ssh key that we can use to access Github
 ```bash
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
-<br />
 
-```
+\
+&nbsp;
+
+```bash
 eval $(ssh-agent -s)
 ```
 
@@ -172,25 +193,35 @@ git commit -m "made some changes"
 git push
 ```
 
-To open your code in VSCode use below command inside of the pulled github folder
+\
+&nbsp;
 
-<br />
-<br />
-<br />
+To open your code in VSCode use below command inside of the pulled github folder
 
 ```bash
 code .
 ```
 
+\
+&nbsp;
+
 ## Jekyll Commands
 
-serving your site
+To start your website locally run below command.
 
 ```bash
 bundle exec jekyll s
 ```
 
+If you run into issues with the port already being in use locally, you can change the port to something else, for example 8080
+
+```bash
+bundle exec jekyll serve --port 8080
+```
+
+<!--
 cat ~/.ssh/id_rsa.pub.
+
 
 ## mac setup
 
@@ -238,3 +269,4 @@ To add local Images, place them in root assets folder, recomendation under a new
 That folder is just for when it has built the website, if placing anything directly there is will disaperare when it builds the website.
 
 Java and Python is nessesary.
+-->
