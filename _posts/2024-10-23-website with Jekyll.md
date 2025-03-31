@@ -1,6 +1,6 @@
 ---
 title: Host a static website in Github pages
-date: 2024-10-23 12:00:00 -500
+date: 2024-10-23 12:00:00 +200
 categories: [projects]
 tags: [website, github] # TAG names should always be lowercase
 ---
@@ -221,7 +221,6 @@ bundle exec jekyll serve --port 8080
 
 <!--
 cat ~/.ssh/id_rsa.pub.
-
 
 ## mac setup
 
