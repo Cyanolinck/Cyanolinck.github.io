@@ -1,6 +1,6 @@
 ---
 title: Host a static website in Github pages
-date: 2024-10-23 12:00:00 +200
+date: 2040-10-23 12:00:00 +200
 categories: [projects]
 tags: [website, github] # TAG names should always be lowercase
 ---
