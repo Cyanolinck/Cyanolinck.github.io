@@ -51,10 +51,10 @@ Make sure you have it installed and have signed into your YouTube account.
 
 ### Download all members from a channel (You must be a member of their chanel)
 
-Go to a YouTube chanel, click on the Videos tab and copy the URL. Replace [https://www.youtube.com/c/Chanelname/videos]
+Go to a YouTube chanel, click on the Videos tab and copy the URL. Replace https://www.youtube.com/c/Chanelname/videos with the URL and use "" around it
 
 ```bash
-yt-dlp --cookies-from-browser firefox --match-filter "availability=members" -f bestvideo+bestaudio --merge-output-format mp4 [https://www.youtube.com/c/Chanelname/videos]
+yt-dlp --cookies-from-browser firefox --match-filter "availability=members" -f bestvideo+bestaudio --merge-output-format mp4 "https://www.youtube.com/c/Chanelname/videos"
 ```
 
 &nbsp;
@@ -64,7 +64,7 @@ yt-dlp --cookies-from-browser firefox --match-filter "availability=members" -f b
 To download all non-member videos change filter to `"availability=public”`
 
 ```bash
-yt-dlp --cookies-from-browser firefox --match-filter "availability=public" -f bestvideo+bestaudio --merge-output-format mp4 [https://www.youtube.com/c/Chanelname/videos] 
+yt-dlp --cookies-from-browser firefox --match-filter "availability=public" -f bestvideo+bestaudio --merge-output-format mp4 "https://www.youtube.com/c/Chanelname/videos" 
 ```
 
 &nbsp;
@@ -72,7 +72,7 @@ yt-dlp --cookies-from-browser firefox --match-filter "availability=public" -f be
 ### Download a specific video
 
 ```bash
-yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 --cookies-from-browser firefox [VIDEO_URL]
+yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 --cookies-from-browser firefox "VIDEO_URL"
 ```
 
 More information about yt-dlp commands <https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#general-options>
