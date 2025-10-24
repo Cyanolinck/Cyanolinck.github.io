@@ -30,14 +30,14 @@ url: "https://lincken.tech"
 github:
   username: Cyanolinck # change to your GitHub username
 
-#twitter:
-  #username: Lincken # change to your Twitter username
+twitter:
+  username: Lincken # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Lincken
-  # email: # change to your email address
+  email: contact@lincken.tech # change to your email address
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username # change to your Twitter homepage
