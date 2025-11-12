@@ -26,6 +26,23 @@ Extract the FFmpeg files and add ffmpeg.exe to your system PATH (or place it in 
 
 &nbsp;
 
+Download external JavaScript runtime (e.g. Deno) as Youtube now requires it.
+<https://github.com/yt-dlp/yt-dlp/issues/15012>
+
+If you choose to use Deno and download the file, put it in the same location as yt-dlp and run it once.
+
+You can check if it's installed by running **deno --version** in command prompt.
+You should see something like below.
+
+```bash
+deno --version
+deno 2.5.6 (stable, release, x86_64-pc-windows-msvc)
+v8 14.0.365.5-rusty
+typescript 5.9.2
+```
+
+&nbsp;
+
 You're now able to download public non-member videos and don't need to do anything more if you're not interested in member content.
 Open a terminal in the same folder where you installed yt-dlp and try below command, remeber to replace "[URL]" with an actual Youtube link. It will save videos by default in the same folder as the yt-dlp.exe file are located.
 
@@ -72,10 +89,18 @@ yt-dlp --cookies-from-browser firefox --match-filter "availability=public" -f be
 ### Download a specific video
 
 ```bash
-yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 --cookies-from-browser firefox "VIDEO_URL"
+yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 --cookies-from-browser firefox "URL"
 ```
 
 More information about yt-dlp commands <https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#general-options>
+
+&nbsp;
+
+### Download a song as mp3
+
+```bash
+yt-dlp -x --audio-format mp3 --cookies-from-browser firefox  firefox "URL"
+```
 
 &nbsp;
 
