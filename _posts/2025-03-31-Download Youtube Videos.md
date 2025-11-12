@@ -96,10 +96,10 @@ More information about yt-dlp commands <https://github.com/yt-dlp/yt-dlp?tab=rea
 
 &nbsp;
 
-### Download a song as mp3
+### Download a song as MP3
 
 ```bash
-yt-dlp -x --audio-format mp3 --cookies-from-browser firefox  firefox "URL"
+yt-dlp -x --audio-format mp3 --cookies-from-browser firefox "URL"
 ```
 
 &nbsp;
