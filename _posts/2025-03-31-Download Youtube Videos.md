@@ -104,6 +104,19 @@ yt-dlp -x --audio-format mp3 --cookies-from-browser firefox "URL"
 
 &nbsp;
 
+## Where does it download to?
+
+It will download the file to where command prompt is open to.
+If you started command prompt from windows search it will be C:\Users\YOURUSERNAME.
+
+It's C:\Users\Lincken for me.
+
+To open Command prompt in a different location.
+
+Shift right-click in the folder were you want to save the video in and select "Open Terminal".
+
+You can setup a config file to have it save to always save to a specific location. Read more here <https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#configuration>
+
 ## Update yt-dlp
 
 If running into any issues, try updating **[yt-dlp](https://github.com/yt-dlp/yt-dlp)**.
