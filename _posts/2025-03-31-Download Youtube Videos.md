@@ -111,11 +111,15 @@ If you started command prompt from windows search it will be C:\Users\YOURUSERNA
 
 It's C:\Users\Lincken for me.
 
+&nbsp;
+
 To open Command prompt in a different location.
 
 Shift right-click in the folder were you want to save the video in and select "Open Terminal".
 
-You can setup a config file to have it save to always save to a specific location. Read more here <https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#configuration>
+You can setup a config file to have it save to always save to a specific location.
+
+Read more here <https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#configuration>
 
 ## Update yt-dlp
 
