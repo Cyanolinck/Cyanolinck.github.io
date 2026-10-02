@@ -71,7 +71,7 @@ Make sure you have it installed and have signed into your YouTube account.
 Go to a YouTube chanel, click on the Videos tab and copy the URL. Replace https://www.youtube.com/c/Chanelname/videos with the URL and use "" around it
 
 ```bash
-yt-dlp --cookies-from-browser firefox --match-filter "availability=members" -f bestvideo+bestaudio --merge-output-format mp4 "https://www.youtube.com/c/Chanelname/videos"
+yt-dlp --cookies-from-browser firefox --match-filter "availability=subscriber_only" -f bestvideo+bestaudio --merge-output-format mp4 "https://www.youtube.com/c/Chanelname/videos"
 ```
 
 &nbsp;
